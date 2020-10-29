@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot='start'>
+      <ion-back-button defaultHref='/home'></ion-back-button>
+    </ion-buttons>
+    <ion-title>Your Diaries</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <ion-item>
+          <ion-label color="dark">Date/time</ion-label>
+          <ion-input  type="text" [(ngModel)]='datetime' placeholder="Text Input"></ion-input>
+        </ion-item> 
+        <ion-item>
+            <ion-label color="dark" >Post</ion-label> 
+            <ion-input  type="text" [(ngModel)]='post'  placeholder="Text Input"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-col>
+            <ion-label color="dark" >Name</ion-label> 
+            <ion-input  type="text" [(ngModel)]='goto'  placeholder="Text Input"></ion-input>
+            </ion-col>
+        </ion-item> 
+        <ion-item>
+            <ion-col>
+            <ion-label color="dark" >image</ion-label> 
+            <ion-input  type="text" [(ngModel)]='img'  placeholder="Text Input"></ion-input>
+            </ion-col>
+        </ion-item> 
+
+    <ion-button fill ="clear" expand = "block" (click) = 'addData(goto,post,datetime,img)'>submit</ion-button>
+    <div *ngIf="add$ | async as ad">
+
+      </div>
+      
+
+

@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot='start'>
+        <ion-back-button defaultHref='/tabs'></ion-back-button>
+      </ion-buttons>
+      <ion-title text-center > <ion-icon name="information-circle"></ion-icon> info</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <form [formGroup]='validations_form' (ngSubmit)='addUserData(validations_form.value)'>
+      <ion-item>
+            <ion-label color="dark">Name</ion-label>
+            <ion-input formControlName='name' placeholder="Text Input"></ion-input>
+          </ion-item> 
+          <ion-item>
+              <ion-label color="dark" >Age</ion-label>
+              <ion-input formControlName='age' type="number" placeholder="Number Input"></ion-input>
+          </ion-item> 
+      <ion-button class='submit-btn' type='submit'>Submit</ion-button>
+    </form>
+  </ion-content>
+
+
+  

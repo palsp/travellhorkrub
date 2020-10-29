@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="/"></ion-back-button>
+        </ion-buttons>
+    <ion-title ><ion-icon name = "book"></ion-icon>  Your diaries</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-grid>
+    <ion-row>
+      <ion-col size-lg="3" size-md="4" size-sm="6" size="12" >
+        <ion-card>
+          <img src="" />
+          <ion-button  color = "cotton"expand = 'block' routerLink = '/diaries/' routerDirection='forward'>share</ion-button>
+          
+        </ion-card>
+      </ion-col>
+    </ion-row>
+      <ion-row>
+        <ion-col size-lg="3" size-md="4" size-sm="6" size="12" >
+          <ion-card>
+            <img src="" />
+            <ion-button color = "cotton" expand = 'block' routerLink = '/showdiary/' routerDirection='forward'>Your diary</ion-button>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>

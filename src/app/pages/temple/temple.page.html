@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="/"></ion-back-button>
+        </ion-buttons>
+    <ion-title>Temple</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<!-- searchByName-->
+  <ion-button expand="block" fill = 'clear' (click)='searchByName(Name,"temple")' >
+      Search by Name <ion-input  type="text" [(ngModel)]="Name" ></ion-input>
+  </ion-button>
+<!-- searchByLocation-->
+  <ion-button expand="block" fill = 'clear' (click)='searchByLocation(Loc,"temple")'>
+      Search by location <ion-input type="text" [(ngModel)]="Loc"></ion-input>
+  </ion-button>
+<!-- Show All -->
+  <ion-button expand="block" fill = 'clear' (click)='getPost("temple")'>
+    Show All
+  </ion-button> 
+    <div *ngIf = 'post$ | async as ps'>
+      <ion-card *ngFor = 'let item of ps'>
+          <ion-col>
+              <ion-img src="{{item.ImgUrl}}"></ion-img>
+          </ion-col>
+              <div class="ion-text-center">
+              <h4>  {{item.Name}}</h4>
+              </div>
+              <h5> <ion-icon name="pin" color = "primary"></ion-icon>  {{item.Address}} </h5>
+              <h4> <ion-icon name="time" color = "primary"></ion-icon>  {{item.openingHour}}</h4>
+              <h4> <ion-icon name="Information-circle" color = "primary"></ion-icon>  {{item.Information}}</h4>
+
+    
+      </ion-card>
+      </div>  
+  </ion-content>
+  
+
+  
+  

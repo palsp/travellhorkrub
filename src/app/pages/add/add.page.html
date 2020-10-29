@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Add location</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-item>
+  <ion-label position="floating">Name</ion-label>
+  <ion-input type="text" [(ngModel)]="Name"></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="floating">Address</ion-label>
+  <ion-input type="text" [(ngModel)]="Address"></ion-input>
+</ion-item>
+
+<ion-item>
+    <ion-label position="floating">Opening Hour</ion-label>
+    <ion-input type="text" [(ngModel)]="openingHour"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label position="floating">Information</ion-label>
+      <ion-input type="text" [(ngModel)]="Information"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label position="floating">Image</ion-label>
+      <ion-input type="text" [(ngModel)]="ImgUrl"></ion-input>
+  </ion-item>
+
+<ion-item>
+      <ion-label>category</ion-label>
+      <ion-select placeholder="Select One" type = "text" [(ngModel)]="category">
+          <ion-select-option value="club">club</ion-select-option>
+          <ion-select-option value="shopping">shopping</ion-select-option>
+          <ion-select-option value="restaurant">restaurant</ion-select-option>
+          <ion-select-option value="temple">temple</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+
+<ion-button expand = "block" fill="clear" (click)='insertPost(Name,Address,openingHour,Information,ImgUrl,category)'  (click)= 'showGreeting()'>add location</ion-button>
+<div *ngIf="add$ | async as ad">
+
+</div>

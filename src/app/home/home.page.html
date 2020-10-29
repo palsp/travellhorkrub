@@ -1,0 +1,67 @@
+<ion-header>
+    <ion-toolbar >
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+      <ion-title >
+          <ion-icon name="airplane"></ion-icon>  Travellokrub  <ion-icon name="airplane"></ion-icon>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content padding class="getting-started">
+  <!--Temple-->
+  <ion-grid>
+    <ion-row>
+      <ion-col size-lg="3" size-md="4" size-sm="6" size="12" >
+      <ion-card>
+          <ion-title text-center color="new" expand = 'block' ><ion-icon name="logo-freebsd-devil"></ion-icon>Temple<ion-icon name="logo-freebsd-devil"></ion-icon></ion-title>
+        <img src="http://3tsll33cscvk11pae33oze51-wpengine.netdna-ssl.com/wp-content/uploads/2014/05/bangkok-temple-wat-phra-kaew.png" routerLink = '/temple/' routerDirection='forward' />
+      </ion-card>
+      </ion-col>
+  </ion-row>
+  </ion-grid>
+  <!--Restaurant-->
+  <ion-grid>
+    <ion-row>
+      <ion-col size-lg="3" size-md="4" size-sm="6" size="12" >
+        <ion-card>
+            <ion-title  text-center color="danger" expand = 'block' ><ion-icon name="restaurant"></ion-icon>Restaurant<ion-icon name="restaurant"></ion-icon></ion-title>
+           <img src="https://www.twinpalmshotelsresorts.com/wp-content/uploads/2019/09/4024-1024x683.jpg"  routerLink = '/res/' routerDirection='forward'/>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!--Shopping place-->
+  <ion-grid>
+    <ion-row>
+      <ion-col size-lg="3" size-md="4" size-sm="6" size="12" >
+        <ion-card>
+            <ion-title color="tertiary" expand = 'block' ><ion-icon name="basket"></ion-icon>  Shopping Places  <ion-icon name="basket"></ion-icon></ion-title>
+          <img src="https://www.kayak.co.in/news/wp-content/uploads/sites/23/2018/03/chatuchak-market_bangkok_800x533.jpg" routerLink = '/dep/' routerDirection='forward' />
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!--Club-->
+  <ion-grid>
+    <ion-row>
+      <ion-col size-lg="3" size-md="4" size-sm="6" size="12" >
+        <ion-card>
+            <ion-title  text-center color="primary" expand = 'block' ><ion-icon name="headset"></ion-icon>Night Club<ion-icon name="headset"></ion-icon></ion-title>
+          <img src="http://static.asiawebdirect.com/m/bangkok/portals/pattaya-bangkok-com/homepage/nightlife/pagePropertiesImage/pattaya-nightlife.jpg.jpg" routerLink = '/club/' routerDirection='forward' />
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+          
+     
+<!-- Add content-->
+<ion-content>
+    <ion-fab  horizontal="end" slot="fixed">
+        <ion-fab-button color = "secondary" >
+          <ion-icon name="add" expand="block" routerLink = '/add/' routerDirection = "forward" ></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+   
+</ion-content>

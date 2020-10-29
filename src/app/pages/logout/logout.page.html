@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="/"></ion-back-button>
+        </ion-buttons>
+    <ion-title  >Log out</ion-title>
+   
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content padding>
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center>
+        goodbye  {{userID}}
+      </ion-col>
+    </ion-row>
+  </ion-grid>  
+  <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-fNPfvy84-uDpEmTiJzxg9MbDtbTvN26bj3-a9k8_zwF49mrE&s"  >
+</ion-content>
+<ion-footer (click)="logout()">
+  <ion-toolbar color="secondary">
+    <ion-title>Log out</ion-title>
+  </ion-toolbar>
+</ion-footer>
