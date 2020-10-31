@@ -1,12 +1,8 @@
-# myShop
-
-##Description 
+# travellhorkrub
 
 - This is an application that can help you plan your trip in a convenient way and allow you to share your journey with your friends!!!
 
-![Sample App Image](./img/sample-app-img-1.png)
-![Sample App Image](./img/sample-app-img-2.png)
-![Sample App Image](./img/sample-app-img-3.png)
+![Sample App Image](./img/sample-app-img-1.png)![Sample App Image](./img/sample-app-img-2.png)![Sample App Image](./img/sample-app-img-3.png)
 
 
 ## Requirement
